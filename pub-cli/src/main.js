@@ -1,11 +1,11 @@
 var pubService = require("pub-services");
 
 function getListPubs(){
-    console.log(pubService.afficherListePubs());
+    pubService.afficherListePubs();
 }
 
 function getListPubsOuverts(){
-    console.log(pubService.afficherListePubsOuverts());
+    (pubService.afficherListePubsOuverts();
 }
 
 module.exports = {
