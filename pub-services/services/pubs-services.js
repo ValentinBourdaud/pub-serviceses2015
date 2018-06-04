@@ -1,13 +1,14 @@
 var pubs = require('../mocks/pubs');
+var moment = require('moment');
 
 function listerPubs() {
   return pubs ;
 }
 
-function listerPubsOuverts(jour) {
+function listerPubsOuverts() {
   var listeJourOuverts = [];
   pubs.forEach(pub => {
-    if(pub['openDays'].includes(jour))
+    if(pub['openDays'].includes(moment().format('dddd')))
     listeJourOuverts.push(pub);
   });
   return listeJourOuverts;
