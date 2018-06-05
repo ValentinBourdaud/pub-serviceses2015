@@ -9,6 +9,7 @@ function afficherListePubsOuverts (){
 console.log(pubService.listerPubsOuverts());
 
 }
+afficherListePubs();
 module.exports = {
 
         afficherListePubs: afficherListePubs,
